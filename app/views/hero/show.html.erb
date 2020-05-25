@@ -1,0 +1,33 @@
+<%= render :partial => 'header' %>
+<div class="hero-area">
+    <div>
+        <div class="breadcrumb">
+            <%= link_to 'Home', root_path %>
+            <p class="breadcrumb-divisor">></p>
+            <p><%= @heroes.name %></p>
+        </div>
+        <img src=<%= @heroes.image_path + "/portrait_uncanny." + @heroes.image_extension %>>
+    </div>
+    <div class="hero-info-area">
+        <p class="hero-name"><%= @heroes.name %></p>
+        <hr>
+        <h3 class="hero-info-subtitle">Description</h3>
+        <% if @heroes.description == "" %>
+            <p>Not found</p>
+        <% else %>
+            <p><%= @heroes.description %></p>
+        <% end %>
+        <h3 class="hero-info-subtitle">Useful links</h3>
+        <div class="useful-links">
+            <% if @heroes.detail != nil %>
+                <a href=<%= @heroes.detail %> target="_blank">More details</a>
+            <% end %>
+            <% if @heroes.wiki != nil %>
+                <a href=<%= @heroes.wiki %> target="_blank">Wiki</a>
+            <% end %>
+            <% if @heroes.comic_link != nil %>
+                <a href=<%= @heroes.comic_link %> target="_blank">Comic</a>
+            <% end %>
+        </div>
+    </div>
+</div>

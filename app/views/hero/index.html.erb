@@ -1,0 +1,7 @@
+<%= render :partial => 'header' %>
+<% flash.each do |type, message| %>
+    <div>
+        <p class="flash-message"><%= message %></p>
+    </div>
+<% end %>
+<%= render :partial => 'heroes-list' %>

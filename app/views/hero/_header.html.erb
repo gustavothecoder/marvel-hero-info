@@ -1,0 +1,9 @@
+<header>
+    <a href="<%= root_path %>" class="header-home-link">
+        <%= image_tag('marvel-logo', class: 'logo')%>
+        <h2 class="logo-subtitle">HERO INFO</h2>
+    </a>
+    <%= form_tag(hero_search_path, :method => 'get') do %>
+        <%= search_field_tag :search, params[:search], placeholder: "Search for a hero by name", class: 'search-bar' %>
+    <% end %>
+</header>
