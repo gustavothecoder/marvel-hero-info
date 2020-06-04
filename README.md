@@ -2,20 +2,20 @@
 
 ![](marvel-hero-info.gif)
 
-## Sobre este projeto
+## About this project
  
-Marvel Hero Info, é uma aplicação WEB que consome dados da API da [MARVEL](https://developer.marvel.com/), no caso, dados de heróis. A aplicação apresenta todos os heróis disponibilizados pela API em uma página inicial, e ao clicar sobre a foto ou nome do herói, você é redirecionado para uma página com mais detalhes sobre o mesmo. Ainda, é possível pesquisar o nome do herói desejado por meio de uma barra de pesquisa.
+Marvel Hero Info, is a WEB application that consumes API data from [MARVEL](https://developer.marvel.com/), in this case, hero data. The application presents all the heroes made available by the API on a homepage, and when you click on the hero's photo or name, you are redirected to a page with more details about the hero. In addition, it is possible to search the name of the desired hero using a search bar.
 
-## Dependências do sistema
+## System dependencies
 
-Para executar esse projeto será necessário:
+To execute this project you will need:
     
-  1. Ruby on Rails e suas dependências(Ruby, SQLite3, Node.js e Yarn)
+  1. Ruby on Rails and its dependencies(Ruby, SQLite3, Node.js e Yarn)
   2. PostgreSQL 
 
-## Configuração
+## Configuration
 
-Em __config/database.yml__ você deve definir seu usuário, senha e porta do banco de dados, da seguinte maneira:
+In __config/database.yml__ you must define your database user, password and port, as follows:
 ```
 development:
   <<: *default
@@ -33,27 +33,27 @@ test:
   password: sua_senha
 ```
 
-## Criar o banco de dados
+## Create the database
 
-Para criar o banco de dados basta executar `rake db:create` no seu terminal.
+To create the database just run `rake db:create` on your terminal.
 
-## Inicializar o Banco de Dados
+## Initialize the Database
 
-A inicialização do banco de dados é feita em duas etapas:
+The database is initialized in two steps:
 
-  1. Realize a migração de banco de dados com o comando `rake db:migrate`
-  2. Utilize o comando `rake db:seed` para popular o banco de dados
+  1. Perform the database migration with the command `rake db:migrate`
+  2. Use the command `rake db:seed` to populate the database
 
-## Como executar o conjunto de testes
+## How to run the test suite
 
-Para executar o conjunto de testes basta utilizar o comando `rspec`
+To run the test suite just use the command `rspec`
 
-## Como executar o projeto
+## How to run the project
 
-OBS: Para executar o projeto, obrigatoriamente, você deve ter feito todas as configurações indicadas e ter criado e inicializado o banco de dados.
+NOTE: To execute the project, you must have made all the settings indicated and have created and initialized the database.
 
-Para executar o projeto siga as seguintes etapas:
+To run the project, follow these steps:
 
-  1. Instale as dependências com o comando `bundle install`
-  2. Inicie o servidor com o comando `rails server`
-  3. Abra o navegador de sua preferência e acesse o endereço __localhost:3000__
+  1. Install the dependencies with the command `bundle install`
+  2. Start the server with the command `rails server`
+  3. Open the browser of your choice and access the address __localhost:3000__
