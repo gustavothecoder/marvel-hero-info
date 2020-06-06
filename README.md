@@ -6,6 +6,12 @@
  
 Marvel Hero Info, is a WEB application that consumes API data from [MARVEL](https://developer.marvel.com/), in this case, hero data. The application presents all the heroes made available by the API on a homepage, and when you click on the hero's photo or name, you are redirected to a page with more details about the hero. In addition, it is possible to search the name of the desired hero using a search bar.
 
+I will be very happy if you can provide me with any feedback on the project, code, structure or anything you can report that can make me a better developer!
+
+Send me an email: g2_ribeiro@hotmail.com
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/gustavo-ribeiro-488b4a17a/)
+
 ## System dependencies
 
 To execute this project you will need:
